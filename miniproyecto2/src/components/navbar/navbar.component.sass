@@ -1,0 +1,99 @@
+#menu
+    padding: 10px
+    width: 100%
+    transition: 0.3s ease-out 
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-bottom-right-radius: 10px
+    border-bottom-left-radius: 10px
+    
+    height: 80px
+    background: #DEA000
+    font-weight: 500
+    font-size: 28px
+
+    #menuparte1
+          display: flex
+          justify-content: center
+          align-items: center
+          flex-direction: row
+    
+
+
+
+    button
+        padding: 9px 25px
+        font-size: 20px
+        background-color: #000000
+        margin: 0px 10px
+        border: none
+        border-radius: 10px
+        cursor: pointer
+        transition: all 0.3s ease 0s
+        color: white
+        &:hover
+            background: #fff
+            color: black
+    ul
+        list-style: none
+        
+        li
+            display: inline-block
+            padding: 0px 20px     
+    a
+        transition: all 0.4s ease 0s
+        text-decoration: none
+        color: black
+        &:hover
+            color: #fff
+    
+#check1,#check2
+        
+        display: none
+        img
+            width: 40px
+            height: 40px
+
+@media (max-width:900px)
+    #menu
+        position: absolute
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        
+
+        #menuparte1
+            margin-bottom: 100px
+            width: 100%
+            ul
+                width: 80%
+                boder: 1 solid black
+                text-align: center
+                li 
+                    
+                    border-bottom: solid 2px #000
+                    margin-bottom: 20px
+                    display: block
+    #check2
+        display: block
+        cursor: pointer 
+        
+        img
+            margin: 10px
+            z-index: 6
+            position: absolute
+
+
+    #check1:checked ~ #menu
+        margin-top:-1200px
+        transition: 0.4s ease-in   
+           
+    
+        
+    
+
+
+    
