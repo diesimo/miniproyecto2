@@ -7,6 +7,13 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegistrarseComponent } from './components/registrarse/registrarse.component';
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireAuth, AngularFireAuthModule } from '@angular/fire/auth';
+import { environment } from './environments/environment';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +23,13 @@ import { RegistrarseComponent } from './components/registrarse/registrarse.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
+    // Inject Modules in Angular
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    AngularFireStorageModule,
+    AngularFireAuth,
   ],
   providers: [],
   bootstrap: [AppComponent]
