@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 import { map } from "rxjs/operators";
+import {Pelis} from './app/pelis.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -10,11 +11,16 @@ import { map } from "rxjs/operators";
 export class MoviesService {
 
   private apikey: string = "299c00f1ba671f53a95c7a2975a9d4dc";
-  private urlMovies: string = "https://api.themoviedb.org/3";
+  private urlMovies: string = "https://api.themoviedb.org/3/discover/movie?api_key=299c00f1ba671f53a95c7a2975a9d4dc&pages=";
+  numero=1;
 
   constructor(private http: HttpClient) { }
 
    //Estos son los metodos de busquedad para usar la url de The Movie DB 
+
+   getPeli():Observable<Pelis[]>{
+     return this.http.get<Pelis[]>(this.urlMovies+this.numero);
+   }
 
   getQuery(query: string) {
     const url = `https://api.themoviedb.org/3${query}&api_key=${
