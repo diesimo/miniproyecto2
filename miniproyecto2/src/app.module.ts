@@ -17,7 +17,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from './environments/environment';
-import { FirebaseModulosModule } from 'C:/Users/the_g/OneDrive/Escritorio/miniproyecto2/miniproyecto2/src/app/modulos/firebase-modulos/firebase-modulos.module';
+//import { FirebaseModulosModule } from 'C:/Users/the_g/OneDrive/Escritorio/miniproyecto2/miniproyecto2/src/app/modulos/firebase-modulos/firebase-modulos.module';
 import 'firebase/auth';
 
 //Imports from HttpModule
@@ -41,7 +41,7 @@ import 'firebase/auth';
     HttpClientModule,
 
     // Inject Modules in Angular
-    AngularFireModule.initializeApp(environment.firebase),
+  //  AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireStorageModule,
     AngularFireAuthModule,
