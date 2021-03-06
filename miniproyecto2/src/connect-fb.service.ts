@@ -1,7 +1,7 @@
 // src/app/service/news.service.ts
 
 import { Injectable } from '@angular/core';
-import { News } from '../model/news';  // News data type interface
+  // News data type interface
 import { AngularFireDatabase, AngularFireList, AngularFireObject } from '@angular/fire/database';  // Firebase modules for Database
 
 @Injectable({
