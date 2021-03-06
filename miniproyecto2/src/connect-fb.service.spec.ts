@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ConnectFBService } from './connect-fb.service';
+import { ConnectfbService } from './connect-fb.service';
 
 describe('ConnectFBService', () => {
-  let service: ConnectFBService;
+  let service: ConnectfbService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(ConnectFBService);
+    service = TestBed.inject(ConnectfbService);
   });
 
   it('should be created', () => {
