@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './components/app/app.component';
@@ -17,9 +17,9 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from './environments/environment';
-import firebase from 'firebase/app'
-import { auth } from 'firebase/firebase-auth';
+import { FirebaseModulosModule } from 'C:/Users/the_g/OneDrive/Escritorio/miniproyecto2/miniproyecto2/src/app/modulos/firebase-modulos/firebase-modulos.module';
 import 'firebase/auth';
+
 //Imports from HttpModule
 
 
@@ -45,8 +45,8 @@ import 'firebase/auth';
     AngularFirestoreModule,
     AngularFireStorageModule,
     AngularFireAuthModule,
-    auth,
-    firebase,
+    BrowserAnimationsModule,
+    FirebaseModulosModule
   ],
   providers: [
    // {provide: StorageBucket, useValue: 'gs://miniproyecto2-74fb4.appspot.com' }
