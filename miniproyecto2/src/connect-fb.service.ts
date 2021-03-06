@@ -21,7 +21,7 @@ export class ConnectfbService {
 
   // Update New Object
   ArchiveNew(id: string) {
-    this.newRef = this.db.object('News-list/' + id);
+    this.newRef = this.db.object('login' + id);
     this.newRef.update({
       archived: true
     })

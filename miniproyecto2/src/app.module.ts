@@ -12,7 +12,7 @@ import { RegistrarseComponent } from './components/registrarse/registrarse.compo
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
-import { AngularFireAuth, AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from './environments/environment';
 
 //Imports from HttpModule
@@ -37,7 +37,7 @@ import { environment } from './environments/environment';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireStorageModule,
-    AngularFireAuth,
+    AngularFireAuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

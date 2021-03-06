@@ -1,5 +1,5 @@
 export interface News {
-    NombreCompleto: string;
+    CorreoElecto: string;
     body: string;
     date: Date;
     title: string;
